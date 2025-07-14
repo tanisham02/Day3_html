@@ -5,3 +5,8 @@ Input types: text, email, password, checkbox, radio, date, file, etc.
 Submit and reset buttons
 Required, readonly, disabled, pattern
 Fieldsets and legends
+
+
+## TOPICS: 
+<header>, <footer>, <main>, <article>, <section>, <nav>, <aside>
+<time>, <address>, <abbr>, <details>, <summary>
