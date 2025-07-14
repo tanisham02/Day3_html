@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Semantic HTML Example</title>
+</head>
+<body>
+
+  <header>
+    <h1>My Personal Blog</h1> <!-- Top section with site name -->
+    <nav>
+      <a href="#">Home</a> |
+      <a href="#">About</a> |
+      <a href="#">Contact</a> <!-- Navigation menu -->
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h2>Welcome to My Blog</h2>
+      <p>Published on <time datetime="2025-07-14">July 14, 2025</time></p> <!-- Time tag -->
+      <p>This blog is all about <abbr title="HyperText Markup Language">HTML</abbr> and web design.</p> <!-- Abbreviation -->
+
+      <section>
+        <h3>Introduction</h3>
+        <p>HTML5 introduced many useful semantic tags.</p>
+      </section>
+
+      <section>
+        <h3>FAQs</h3>
+        <details>
+          <summary>What is HTML?</summary> <!-- Summary of collapsible section -->
+          <p>HTML stands for HyperText Markup Language.</p> <!-- Hidden until opened -->
+        </details>
+      </section>
+    </article>
+
+    <aside>
+      <h3>Related Posts</h3>
+      <ul>
+        <li><a href="#">HTML Tags Overview</a></li>
+        <li><a href="#">CSS Basics</a></li>
+      </ul> <!-- Sidebar with related links -->
+    </aside>
+  </main>
+
+  <footer>
+    <address>
+      Contact: <a href="mailto:me@example.com">me@example.com</a>
+    </address> <!-- Contact info -->
+    <p>© 2025 My Personal Blog</p>
+  </footer>
+
+</body>
+</html>
