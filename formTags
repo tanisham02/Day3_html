@@ -1,0 +1,68 @@
+Form Attributes: 
+<input type="text" required>            <!-- Must be filled -->
+<input type="text" readonly value="ABC"> <!-- Can't edit -->
+<input type="text" disabled>            <!-- Grayed out and uneditable -->
+<input type="text" pattern="[A-Za-z]{3,}" title="At least 3 letters">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Full HTML Form Example</title>
+</head>
+<body>
+  <h2>Registration Form</h2>
+  <form action="/submit-form" method="post">
+    <!-- Grouping fields -->
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required pattern=".{6,}" title="At least 6 characters"><br><br>
+
+      <label for="birthdate">Birthdate:</label>
+      <input type="date" id="birthdate" name="birthdate"><br><br>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Preferences</legend>
+
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <option value="in">India</option>
+        <option value="us">USA</option>
+        <option value="uk">UK</option>
+      </select><br><br>
+
+      <label>Gender:</label><br>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br><br>
+
+      <input type="checkbox" id="subscribe" name="subscribe">
+      <label for="subscribe">Subscribe to newsletter</label><br><br>
+      
+      <label for="resume">Upload Resume:</label>
+      <input type="file" id="resume" name="resume"><br><br>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Comments</legend>
+      <label for="message">Your message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="40" placeholder="Enter your comments here..."></textarea>
+    </fieldset>
+    <br>
+    <!-- Submit and Reset buttons -->
+    <input type="submit" value="Submit Form">
+    <input type="reset" value="Reset Form">
+  </form>
+</body>
+</html>
+
